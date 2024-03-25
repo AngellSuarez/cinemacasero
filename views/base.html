@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/estilogeneral.css">
+    <link rel="stylesheet" href="../css/tarjetas.css">
+    <link rel="stylesheet" href="../css/modal.css">
+</head>
+
+<body>
+    <!--header-->
+    <section class="header">
+        <div>
+            <img src="#" alt="logo" id="logo">
+            <h1>cine casero</h1>
+            <h6>la pagina de excelencia para peliculas</h6>
+        </div>
+    </section>
+
+    <!--nabvar-->
+    <section class="nabvegacion">
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="#">inicio</a></li>
+                    <li><a href="#">2022</a></li>
+                    <li><a href="#">2023</a></li>
+                </ul>
+            </nav>
+        </div>
+<section class="seleccionClases">
+<aside >
+    <h1 id="asidetitle">titulo</h1>
+    
+</aside>
+
+</section>
+    </section>
+    <!--tarjetas y organizador-->
+    <section class="secciontarjetas">       
+        <div class="organizadorHorizontal">
+            <!--tarjeta-->
+            <div class="tarjeta" data-modal-id="modal12022">
+                <div class="imagentarjeta">
+                    <img src="../assets/img/Aquaman_y_el_reino_perdido-274178849-large.jpg" alt="imagen">
+                    <div class="contenidoTarjetas">
+                        <p>titulo pelicula</p>
+                    </div>
+                </div>
+            </div>
+            <!--insertar solo tarjetas-->
+            <div class="tarjeta" data-modal-id="modal2-2022">
+                <div class="imagentarjeta">
+                    <img src="../assets/img/Aquaman_y_el_reino_perdido-274178849-large.jpg" alt="imagen">
+                    <div class="contenidoTarjetas">
+                        <p>titulo pelicula</p>
+                    </div>
+                </div>
+            </div>
+        </div> <!--finalizar organizador horizontal-->
+        <section id="Creacionmodales">
+            <div id="modal12022" class="modal" role="dialog" aria-labelledby="modal-title"
+                aria-describedby="modal-description">
+                <!--contenido del modal-->
+                <div class="contenidoModal">
+                    <div class="modalImagen">
+                        <img src="../assets/img/Aquaman_y_el_reino_perdido-274178849-large.jpg"
+                            alt="Imagen de la película">
+                    </div>
+                    <div class="modalInfo">
+                        <h1>Título de la película</h1>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea cupiditate sequi, repudiandae
+                            cumque
+                            voluptate ipsa quis totam? A, quod animi labore veritatis repellendus distinctio inventore
+                            dolorum natus quia doloribus, aut dolores ad nihil dolore iusto esse? Eaque omnis
+                            perspiciatis
+                            neque?</p>
+                        <div class="generos">
+                            <ul>
+                                <li>Acción</li>
+                                <li>Aventura</li>
+                                <!-- Agrega más géneros según sea necesario -->
+                            </ul>
+                        </div>
+                        <div class="close">
+                            <button class="modal__cerrar">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--modal 2-->
+            <div id="modal2-2022" class="modal" role="dialog" aria-labelledby="modal-title"
+                aria-describedby="modal-description">
+                <!--contenido del modal-->
+                <div class="contenidoModal">
+                    <div class="modalImagen">
+                        <img src="../assets/img/Aquaman_y_el_reino_perdido-274178849-large.jpg"
+                            alt="Imagen de la película">
+                    </div>
+                    <div class="modalInfo">
+                        <h1>Título de la película</h1>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea cupiditate sequi, repudiandae
+                            cumque
+                            voluptate ipsa quis totam? A, quod animi labore veritatis repellendus distinctio inventore
+                            dolorum natus quia doloribus, aut dolores ad nihil dolore iusto esse? Eaque omnis
+                            perspiciatis
+                            neque?</p>
+                        <div class="generos">
+                            <ul>
+                                <li>Drama</li>
+                                <li>Romance</li>
+                                <!-- Agrega más géneros según sea necesario -->
+                            </ul>
+                        </div>
+                        <div class="close">
+                            <button class="modal__cerrar">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </section>
+
+    <!--footer-->
+    <section class="footerepico">
+        <footer>
+            <div>
+                <p>copy</p>
+            </div>
+        </footer>
+    </section>
+    <script src="../js/nuevoModal.js"></script>
+</body>
+
+</html>

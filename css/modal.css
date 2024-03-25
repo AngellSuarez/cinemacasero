@@ -1,0 +1,76 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  overflow: auto;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+}
+.modal .mostrar{
+display: block;
+}
+.contenidoModal {
+  margin: auto;
+  padding: 20px;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+}
+/* manejo de imagen lateral*/
+.modalImagen {
+  flex: 1;
+  padding: 20px;
+}
+.modalImagen img {
+  max-width: 100%;
+  height: 100%;
+}
+/* manejo de texto*/
+.modalInfo {
+  flex: 2;
+  padding: 20px;
+}
+.modalInfo h1{
+text-align: center;
+font-size: 35px;
+color: rgb(202, 178, 39);
+text-decoration: none;
+}
+.modalInfo p{
+font-size: 20px;
+text-align: justify;
+}
+/* organizacion generos*/
+.generos li {
+  color: rgb(87, 80, 80);
+  display: inline-block;
+  opacity: 60%;
+padding: 10px;
+font-size: 20px;
+}
+.generos ul {
+  list-style: none;
+}
+/*boton de cerrar*/
+.close button {
+  font-family: arial, sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #211f1f;
+  color: white;
+  width: 100%;
+  border: 0;
+  padding: 11px;
+  font-size: 12px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.close button:hover,
+.close button:active,
+.close button:focus {
+  background: #502626;
+}
