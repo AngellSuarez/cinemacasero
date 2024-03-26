@@ -22,10 +22,15 @@ font-size: 39px;
 }
 
 .header #logo {
-  float: left;
-  height: 70px;
-  width: 70px;
+  position: absolute; 
+  left: 0; 
+  transform: translateX(-50%); 
+top: 13%;
+  transform: translateY(-50%);
+  height: 160px;
+  width: 170px;
 }
+
 
 /* nabvar */
 .nabvegacion nav {
@@ -66,14 +71,31 @@ font-size: 39px;
   display: inline-block;
 }
 
-.seleccionClases{
-border: 1px solid white;
-display: flex;
+/* aside epico*/
+aside {
+  border: 1px solid red;
+  z-index: 0;
 }
-.seleccionClases aside{
- float: left;
+.filtros {
+  border: 1px solid red;
+  width: 300px; 
+  float: left; 
+  margin-right: 2px; 
 }
-
+.busqueda{
+margin: 10px;
+}
+.seccionFiltros{
+margin: 10px;
+align-items: center;
+text-align: center;
+display: block;
+}
+.seccionFiltros input[type="checkbox"],
+.seccionFiltros label {
+display: block;
+margin: 2px 0;
+}
 /* footer*/
 .footerepico footer {
   background-color: #48423d;
