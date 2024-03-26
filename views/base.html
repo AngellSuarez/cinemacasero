@@ -14,7 +14,7 @@
     <!--header-->
     <section class="header">
         <div>
-            <img src="#" alt="logo" id="logo">
+            <img src="../assets/img/logo.png" alt="logo" id="logo">
             <h1>cine casero</h1>
             <h6>la pagina de excelencia para peliculas</h6>
         </div>
@@ -26,24 +26,53 @@
             <nav>
                 <ul>
                     <li><a href="#">inicio</a></li>
-                    <li><a href="#">2022</a></li>
-                    <li><a href="#">2023</a></li>
+                    <li><a href="#">catalogo</a></li>
                 </ul>
             </nav>
         </div>
-<section class="seleccionClases">
-<aside >
-    <h1 id="asidetitle">titulo</h1>
-    
-</aside>
-
-</section>
     </section>
+    <aside class="filtros">
+        <!--buscador-->
+        <div class="busqueda">
+            <input type="text" id="buscadorTitulo" placeholder="Ingresa el titulo">
+            <button id="botonBuscar">Buscar</button>
+        </div>
+        <!--seccion de filtro años-->
+        <div class="seccionFiltros">
+            <h3>Año</h3>
+            <input type="checkbox" id="year2022" value="2022">
+            <label for="year2022">2022</label>
+            <input type="checkbox" id="year2023" value="2023">
+            <label for="year2023">2023</label>
+        </div>
+        <!--filtro de generos-->
+        <div class="seccionFiltros">
+            <h3>Generos</h3>
+            <input type="checkbox" id="generoAccion" value="accion">
+            <label for="generoAccion">Accion</label>
+            <input type="checkbox" id="generoDrama" value="drama">
+            <label for="generoDrama">Drama</label>
+            <input type="checkbox" id="generoRomance" value="romance">
+            <label for="generoRomance">Romance</label>
+            <input type="checkbox" id="generoMisterio" value="misterio">
+            <label for="generoMisterio">Misterio</label>
+            <input type="checkbox" id="generoComedia" value="comedia">
+            <label for="generoComedia">Comedia</label>
+            <input type="checkbox" id="generoTerror" value="terror">
+            <label for="generoTerror">Terror</label>
+            <input type="checkbox" id="generoFantasia" value="fantasia">
+            <label for="generoFantasia">Fantasia</label>
+            <input type="checkbox" id="generoFiccion" value="ficcion">
+            <label for="generoFiccion">Ficcion</label>
+            <input type="checkbox" id="generoSuspenso" value="suspenso">
+            <label for="generoSuspenso">Suspenso</label>
+        </div>
+    </aside>
     <!--tarjetas y organizador-->
-    <section class="secciontarjetas">       
+    <section class="secciontarjetas">
         <div class="organizadorHorizontal">
             <!--tarjeta-->
-            <div class="tarjeta" data-modal-id="modal12022">
+            <div class="tarjeta" data-modal-id="modal12022" data-year="2022" data-genres="accion, romance">
                 <div class="imagentarjeta">
                     <img src="../assets/img/Aquaman_y_el_reino_perdido-274178849-large.jpg" alt="imagen">
                     <div class="contenidoTarjetas">
@@ -51,12 +80,11 @@
                     </div>
                 </div>
             </div>
-            <!--insertar solo tarjetas-->
-            <div class="tarjeta" data-modal-id="modal2-2022">
+<div class="tarjeta" data-modal-id="modal2-2022" data-year="2023" data-genres="comedia">
                 <div class="imagentarjeta">
                     <img src="../assets/img/Aquaman_y_el_reino_perdido-274178849-large.jpg" alt="imagen">
                     <div class="contenidoTarjetas">
-                        <p>titulo pelicula</p>
+                        <p>sapo</p>
                     </div>
                 </div>
             </div>
@@ -137,6 +165,7 @@
         </footer>
     </section>
     <script src="../js/nuevoModal.js"></script>
+<script src="../js/filtrado.js"></script>
 </body>
 
 </html>
