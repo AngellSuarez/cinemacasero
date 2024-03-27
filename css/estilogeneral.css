@@ -1,42 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
   height: 100%;
-  background-color: #272525;
+  background-color: rgb(190, 214, 218);
 }
 
 /* header */
 .header {
-  background: linear-gradient(rgb(139, 139, 139),rgb(112, 112, 112),rgb(65, 60, 60));
+  background-color: rgb(150, 187, 194);
   padding: 20px;
 }
 
 .header h1,
 h6 {
   text-align: center;
-  color: white;
+  color: rgb(88, 122, 232);
 }
-.header h1{
-font-size: 39px;
+.header h1 {
+  font-size: 50px;
+text-shadow: 2px 2px 4px rgba(239, 237, 255, 0.5);
 }
 
 .header #logo {
-  position: absolute; 
-  left: 0; 
-  transform: translateX(-50%); 
-top: 13%;
+  position: absolute;
+  left: 0;
+  transform: translateX(-50%);
+  top: 10%;
   transform: translateY(-50%);
   height: 160px;
   width: 170px;
 }
 
-
 /* nabvar */
 .nabvegacion nav {
   display: flex;
   justify-content: space-between;
-  background-color: #48423d;
+  background-color: rgb(80, 136, 146);
   justify-content: center;
 }
 
@@ -72,35 +80,90 @@ top: 13%;
 }
 
 /* aside epico*/
-aside {
-  border: 1px solid red;
-  z-index: 0;
+.contenedorAside{
+  display: flex;
+flex: 1;
+  float: left;
+  margin-right: 2px;
+  background-color: rgb(170, 201, 207);
+width: 240px;
 }
-.filtros {
-  border: 1px solid red;
-  width: 300px; 
-  float: left; 
-  margin-right: 2px; 
+
+.busqueda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.busqueda{
-margin: 10px;
+
+.busqueda input[type="text"] {
+  margin-top: 5px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  width: 200px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease;
 }
-.seccionFiltros{
-margin: 10px;
-align-items: center;
-text-align: center;
-display: block;
+
+.busqueda input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none;
 }
-.seccionFiltros input[type="checkbox"],
+.busqueda button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.busqueda button:hover {
+  background-color: rgb(79, 128, 196);
+}
+
+.busqueda button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+}
+
+.seccionFiltros {
+  margin: 1px;
+  align-items: center;
+  text-align: center;
+  display: block;
+}
+.seccionFiltros h3 {
+  color: rgb(43, 50, 59);
+  font-size: 19px;
+text-shadow: 2px 2px 4px rgba(59, 24, 255, 0.5);
+}
+
+.seccionFiltros input[type="checkbox"] {
+  display: none;
+}
+
 .seccionFiltros label {
-display: block;
-margin: 2px 0;
+  display: block;
+  margin: 2px 0;
+  padding: 5.5px;
 }
+
+.seccionFiltros label:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(79, 128, 196);
+}
+input[type="checkbox"]:checked + label {
+  background-color: rgb(79, 128, 196);
+}
+
 /* footer*/
 .footerepico footer {
-  background-color: #48423d;
+  background-color: rgb(55, 116, 127);
   color: white;
   text-align: center;
-  padding: 0.2rem;
+  padding: 0.5rem;
   bottom: 0;
 }
