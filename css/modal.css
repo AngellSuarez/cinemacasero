@@ -1,13 +1,14 @@
 .modal {
   display: none;
   position: fixed;
-  z-index: 1;
+z-index: 1000; 
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   overflow: auto;
-  background-color: rgb(255, 255, 255);
+  background-color: #d4e9e9;
   padding: 20px;
+border-radius: 2%;
 }
 .modal .mostrar{
 display: block;
@@ -36,7 +37,7 @@ display: block;
 .modalInfo h1{
 text-align: center;
 font-size: 35px;
-color: rgb(202, 178, 39);
+color: rgb(39, 118, 202);
 text-decoration: none;
 }
 .modalInfo p{
@@ -45,7 +46,7 @@ text-align: justify;
 }
 /* organizacion generos*/
 .generos li {
-  color: rgb(87, 80, 80);
+  color: rgb(37, 31, 83);
   display: inline-block;
   opacity: 60%;
 padding: 10px;
@@ -59,8 +60,8 @@ font-size: 20px;
   font-family: arial, sans-serif;
   text-transform: uppercase;
   outline: 0;
-  background: #211f1f;
-  color: white;
+  background: #8fc6d2;
+  color: rgb(84, 77, 77);
   width: 100%;
   border: 0;
   padding: 11px;
@@ -72,5 +73,17 @@ font-size: 20px;
 .close button:hover,
 .close button:active,
 .close button:focus {
-  background: #502626;
+  background: #b4baca;
+}
+
+body.modal-open::after {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Color de fondo semi-transparente */
+  z-index: 999; /* Asegura que el fondo esté detrás del modal */
 }
