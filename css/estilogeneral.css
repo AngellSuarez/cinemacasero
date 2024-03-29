@@ -82,9 +82,10 @@ text-shadow: 2px 2px 4px rgba(239, 237, 255, 0.5);
 /* aside epico*/
 .contenedorAside{
   display: flex;
-flex: 1;
+  flex: 1;
   float: left;
-  margin-right: 2px;
+  margin-left: 2rem;
+margin-top: 2rem;
   background-color: rgb(170, 201, 207);
 width: 240px;
 }
@@ -96,7 +97,8 @@ width: 240px;
 }
 
 .busqueda input[type="text"] {
-  margin-top: 5px;
+  margin-top: 1rem;
+margin-left: 0.5rem;
   border: 2px solid #ccc;
   border-radius: 5px;
   padding: 10px;
