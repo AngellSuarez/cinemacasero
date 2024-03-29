@@ -1,7 +1,7 @@
 /* horizontalidad de tarjetas*/
 .organizadorHorizontal {
   display: flex;
-margin: 100px;
+margin: 10px;
   flex-wrap: wrap;
   justify-content: center;
   position: relative; 
@@ -14,7 +14,7 @@ margin: 100px;
   border-radius: 2%;
   box-shadow: 0 10px 10px 2px rgba(0, 0, 0, 1);
   width: 210px;
-  height: 330px;
+  height: 337px;
   margin: 15px;
   background: none;
   cursor: pointer;
@@ -36,6 +36,7 @@ align-items: center;
 margin-bottom: 10px;
 text-align: center;
 color: rgb(0, 0, 0);
+font-size: 15px;
 }
 
 .tarjeta .imagentarjeta img {
